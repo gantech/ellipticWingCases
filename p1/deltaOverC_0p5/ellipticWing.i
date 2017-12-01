@@ -127,8 +127,8 @@ realms:
       debug:    True
       t_start: 0.0
       t_max:    30.0
-      dt_fast: 0.00125
-      n_every_checkpoint: 1000
+      dt_fast: 0.005
+      n_every_checkpoint: 250
 
       Turbine0:
         num_force_pts_blade: 50
@@ -143,7 +143,7 @@ realms:
 
     output:
       output_data_base_name: out/ellipticWing.e
-      output_frequency: 1000
+      output_frequency: 250
       output_node_set: no
       output_variables:
        - velocity
@@ -152,7 +152,7 @@ realms:
 
     restart:
       restart_data_base_name: rst/ellipticWing.rst
-      restart_frequency: 1000
+      restart_frequency: 250
       restart_start: 1
       compression_level: 9
       compression_shuffle: yes  
@@ -161,8 +161,8 @@ Time_Integrators:
   - StandardTimeIntegrator:
       name: ti_1
       start_time: 0
-      termination_step_count: 24000
-      time_step: 0.00125
+      termination_step_count: 6000
+      time_step: 0.005
       time_stepping_type: fixed
       time_step_count: 0
       second_order_accuracy: yes

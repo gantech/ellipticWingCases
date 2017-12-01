@@ -7,7 +7,7 @@ nalu_abl_mesh:
     - [-10.0, -20.0, -15.0]
     - [20.0, 20.0, 15.0]
 
-  mesh_dimensions: [240, 320, 240]
+  mesh_dimensions: [120, 160, 120]
 
   xmin_boundary_name: inflow
   xmax_boundary_name: outflow
