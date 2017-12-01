@@ -19,13 +19,13 @@ false         Echo            - Echo input data to <RootName>.ech (flag)
           0   CompMooring     - Compute mooring system (switch) {0=None; 1=MAP++; 2=FEAMooring; 3=MoorDyn; 4=OrcaFlex}
           0   CompIce         - Compute ice loads (switch) {0=None; 1=IceFloe; 2=IceDyn}
 ---------------------- INPUT FILES ---------------------------------------------
-"EllipticWing/EllipticWing_Onshore_ElastoDyn.dat"    EDFile          - Name of file containing ElastoDyn input parameters (quoted string)
-"EllipticWing/EllipticWing_BeamDyn.dat"    BDBldFile(1)    - Name of file containing BeamDyn input parameters for blade 1 (quoted string)
-"EllipticWing/EllipticWing_BeamDyn.dat"    BDBldFile(2)    - Name of file containing BeamDyn input parameters for blade 2 (quoted string)
-"EllipticWing/EllipticWing_BeamDyn.dat"    BDBldFile(3)    - Name of file containing BeamDyn input parameters for blade 3 (quoted string)
-"EllipticWing/EllipticWing_InflowWind_Steady8mps.dat"    InflowFile      - Name of file containing inflow wind input parameters (quoted string)
-"EllipticWing/EllipticWing_Onshore_AeroDyn15.dat"    AeroFile        - Name of file containing aerodynamic input parameters (quoted string)
-"EllipticWing/EllipticWing_Onshore_ServoDyn.dat"    ServoFile       - Name of file containing control and electrical-drive input parameters (quoted string)
+"../../ellipticWingOpenFAST/EllipticWing/EllipticWing_Onshore_ElastoDyn.dat"    EDFile          - Name of file containing ElastoDyn input parameters (quoted string)
+"../../ellipticWingOpenFAST/EllipticWing/EllipticWing_BeamDyn.dat"    BDBldFile(1)    - Name of file containing BeamDyn input parameters for blade 1 (quoted string)
+"../../ellipticWingOpenFAST/EllipticWing/EllipticWing_BeamDyn.dat"    BDBldFile(2)    - Name of file containing BeamDyn input parameters for blade 2 (quoted string)
+"../../ellipticWingOpenFAST/EllipticWing/EllipticWing_BeamDyn.dat"    BDBldFile(3)    - Name of file containing BeamDyn input parameters for blade 3 (quoted string)
+"../../ellipticWingOpenFAST/EllipticWing/EllipticWing_InflowWind_Steady8mps.dat"    InflowFile      - Name of file containing inflow wind input parameters (quoted string)
+"../../ellipticWingOpenFAST/EllipticWing/EllipticWing_Onshore_AeroDyn15.dat"    AeroFile        - Name of file containing aerodynamic input parameters (quoted string)
+"../../ellipticWingOpenFAST/EllipticWing/EllipticWing_Onshore_ServoDyn.dat"    ServoFile       - Name of file containing control and electrical-drive input parameters (quoted string)
 "unused"      HydroFile       - Name of file containing hydrodynamic input parameters (quoted string)
 "unused"      SubFile         - Name of file containing sub-structural input parameters (quoted string)
 "unused"      MooringFile     - Name of file containing mooring system input parameters (quoted string)
@@ -51,4 +51,4 @@ False         LinOutMod       - Write module-level linearization output files in
           0   WrVTK           - VTK visualization data output: (switch) {0=none; 1=initialization data only; 2=animation}
           1   VTK_type        - Type of VTK visualization data: (switch) {1=surfaces; 2=basic meshes (lines/points); 3=all meshes (debug)} [unused if WrVTK=0]
 true          VTK_fields      - Write mesh fields to VTK data files? (flag) {true/false} [unused if WrVTK=0]
-         15   VTK_fps         - Frame rate for VTK output (frames per second){will use closest integer multiple of DT} [used only if WrVTK=2]
+         10   VTK_fps         - Frame rate for VTK output (frames per second){will use closest integer multiple of DT} [used only if WrVTK=2]
