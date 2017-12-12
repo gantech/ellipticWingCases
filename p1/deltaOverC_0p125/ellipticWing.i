@@ -122,7 +122,7 @@ realms:
       search_target_part: fluid_part
 
       n_turbines_glob: 1
-      simStart: init
+      simStart: restart
       dry_run:  False
       debug:    True
       t_start: 0.0
